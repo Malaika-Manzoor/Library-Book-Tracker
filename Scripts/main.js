@@ -1,7 +1,7 @@
 import { createBook } from "./Book.js";
 import {ISBN_Validation} from "./validator.js"
 import { Library } from "./Library.js";
-import { storeBooks,loadBook } from "./localStorage.js";
+import { storeBooks,loadBook } from "./localstorage.js";
 
 const bookTitle = document.querySelector("#title");
 const bookAuthor = document.querySelector("#author")

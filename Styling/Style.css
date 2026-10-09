@@ -1,0 +1,213 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.image{
+    background-image: url("../images/g.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.image #h1{
+    
+
+     font-family: 'Playfair Display', serif;
+     color: rgb(235, 235, 235);
+     font-size: 70px;
+}
+
+
+#searchBook{
+    
+   font-family: 'Playfair Display', serif;
+   font-size: 50px;
+   margin-left: 500px;
+    
+
+}
+
+
+fieldset{
+    margin-bottom: 50px;
+    width: 700px;
+    height:500px;
+    border-width: 3px;
+    background-color: white;
+    border-radius:30px;
+}
+legend{
+    
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-right: 530px;
+}
+input{
+    
+    width: 600px;
+    padding: 2px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(243, 240, 240);
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+input[type="submit"]{
+    width: 600px;
+    padding: 5px;
+    height: 50px;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+input:hover {
+    border-color: #6fd80c;
+}
+
+
+.bookTitle{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.bookAuther{
+     margin-bottom: 30px;
+}
+.show-error{
+    width: 600px;
+    padding: 3px;
+    height: 50px;
+    background-color: red;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+   
+}
+
+.book-card{
+    width: 500px;
+    height: 300px;
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 15px;
+    gap: 10px;
+    margin-bottom: 35px;
+    white-space: pre-line;
+    text-align: left;
+    padding: 18px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: rgb(225, 224, 223);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.501);
+    margin-left: 30px;
+}
+
+.book-card button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+   
+    
+}
+
+ #BookLists{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 0;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: rgb(94, 92, 92);
+}
+
+.error {
+    display: none;
+}
+
+.error.show-error {
+    display: block;
+}
+
+.success {
+    display: none;
+}
+
+.success.show-success {
+    display: block;
+    width: 600px;
+    padding: 3px;
+    height: 50px;
+    background-color: rgb(16, 78, 21);
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.show-return{
+    background-color: rgb(29, 103, 139);
+    margin-top:20px;
+    margin-left: 60px;
+    color: white;
+}
+
+.show-borrow:hover{
+    background-color: rgba(85, 84, 84, 0.905);
+    color: white;
+}
+
+.show-return:hover{
+    background-color: rgba(3, 53, 85, 0.905);
+    color: white;
+}
+
+.show-borrow{
+    background-color: rgb(0, 0, 0);
+    margin-top:40px;
+    margin-left: 60px;
+    color: white;
+    
+} 
+
+.show-borrow.borrowed{
+    background-color: rgb(192, 1, 1) !important;
+    color: white;
+}
+.show-return.available{
+    background-color: rgb(7, 227, 7) !important;
+    color: rgb(0, 0, 0);
+}
+#p2{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    
+    width: 500px;
+    color: rgb(81, 80, 80);
+    padding: 10px;
+
+}
+.Books{
+    background-color: rgb(255, 252, 252);
+   
+    
+}
+#searchText{
+    background-color: rgb(255, 255, 255);
+}

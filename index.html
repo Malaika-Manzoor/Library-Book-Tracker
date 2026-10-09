@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Tracker</title>
+    <link rel="stylesheet" href="Styling/Style.css">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="Container">
+         <div class="image">
+            <h1 id="h1" style="margin-right: 300px;" >Library Book Tracker</h1>
+         </div><br> <br>
+        
+        <center>
+            <div>
+                <div class="search">
+                        <label for="searchText" id="searchBook" >Search Books Here!!!!</label><br><br><br>
+                        <input type="text" name="" id="searchText" placeholder="Auther\Title\ISBN">      
+                </div>
+
+                <div class="Books">
+                    <h2>Book Lists</h2>
+                    <ul id="BookLists"></ul>
+                </div>
+            </div>
+        </center>
+
+
+        <center><div class="form">
+           <form action="" id="BookForm">
+                <p id="p2">Fill this form to add new books</p>
+                <fieldset>
+                    <legend>Add New Book</legend>
+                    <div class="bookTitle">
+                        <label for="title">Title:</label><br>
+                        <input type="text" name="book " id="title" placeholder="Enter Book Title " required>
+                    </div>
+
+                    <div class="bookAuther">
+                        <label for="author">Author:</label><br>
+                        <input type="text" name="auther " id="author" placeholder="Enter the Auther name" required>
+                    </div>
+                    <div class="ISBNO">
+                        <label for="ISBN">ISBN:</label><br>
+                        <input type="text" name="ISB" id="ISBN" placeholder="9780140449136" required>
+
+                    </div><br><br>
+
+                    <input type="submit" value="Add" id="button" style="background-color:black ; color: white; "><br>
+                    <p class="error"></p>
+                    <p class="success"></p>
+
+
+                </fieldset>
+                <br>
+                
+            </form></center>
+        </div>
+
+       
+
+    </div>
+
+   
+    
+    <script src="./Scripts/main.js" type="module">
+
+    </script>
+</body>
+
+</html>

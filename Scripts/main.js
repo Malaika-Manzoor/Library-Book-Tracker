@@ -112,6 +112,7 @@ form.addEventListener("submit",(event)=>{
     
      
     library.addBook(myBook) 
+    renderBooks()
     storeBooks(library.books)
     success.textContent = "Sucessfully book added"
     setTimeout(()=>{
@@ -126,7 +127,7 @@ form.addEventListener("submit",(event)=>{
 
 search.addEventListener("input" ,(event)=>{
     const text = event.target.value.trim()
-    const regex = new RegExp(text,"i")
+    const regex = new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),"i")
     const filterBooks = library.books.filter(book =>{
         return regex.test(book.title)||
                 regex.test(book.author) ||
